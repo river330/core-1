@@ -1,0 +1,216 @@
+body {
+	background-color: black;
+}
+.test {
+    color:  white;
+	font-style:  bold;
+	font-size: 100px;
+	text-align: center;
+	font-family: "verdana";
+	margin-top: 25px;
+
+}
+.clothing {
+	display: flex;
+	flex-wrap:  wrap;
+	justify-content: center;
+
+}
+.hats {
+	position: relative;
+	width: 400px;
+}
+
+.hat__image {
+	display: block;
+	width:  100%;
+	height: auto;
+}
+
+.hat__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: Ariel;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+.hat__overlay--blur {
+	backdrop-filter: blur(5px);
+}
+
+.hat__overlay > * {
+	transform:  translateY(20px);
+	transition: transform 0.25s;
+}
+
+.hat__overlay:hover {
+	opacity: 1;
+}
+
+.hat__overlay:hover > * {
+	transform:  translateY(0px);
+}
+
+.title {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	font-family: "verdana";
+}
+
+.text {
+	font-size: 25px;
+	margin-top: 0.75px;
+	text-align: center;
+	font-family: "verdana";
+}
+
+.shirts {
+	position: relative;
+	width: 400px;
+}
+
+.shirt__image {
+	display: block;
+	width:  100%;
+	height: auto;
+}
+
+.shirt__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: Ariel;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+.shirt__overlay--blur {
+	backdrop-filter: blur(5px);
+}
+
+.shirt__overlay > * {
+	transform:  translateY(20px);
+	transition: transform 0.25s;
+}
+
+.shirt__overlay:hover {
+	opacity: 1;
+}
+
+.shirt__overlay:hover > * {
+	transform:  translateY(0px);
+}
+
+.pants {
+	position: relative;
+	width: 400px;
+}
+
+.pants__image {
+	display: block;
+	width:  100%;
+	height: auto;
+}
+
+.pants__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: Ariel;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+.pants__overlay--blur {
+	backdrop-filter: blur(5px);
+}
+
+.pants__overlay > * {
+	transform:  translateY(20px);
+	transition: transform 0.25s;
+}
+
+.pants__overlay:hover {
+	opacity: 1;
+}
+
+.pants__overlay:hover > * {
+	transform:  translateY(0px);
+}
+
+.shoes {
+	position: relative;
+	width: 400px;
+}
+
+.shoe__image {
+	display: block;
+	width:  100%;
+	height: auto;
+}
+
+.shoe__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	font-family: Ariel;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+.shoe__overlay--blur {
+	backdrop-filter: blur(5px);
+}
+
+.shoe__overlay > * {
+	transform:  translateY(20px);
+	transition: transform 0.25s;
+}
+
+.shoe__overlay:hover {
+	opacity: 1;
+}
+
+.shoe__overlay:hover > * {
+	transform:  translateY(0px);
+}
+
+.spin-large {
+	font-style: italic;
+	transition: all 0.8s, font-weight 0s;
+}
+
+.spin-large:hover {
+	font-size: 2em;
+	font-weight: bold;
+	background: -webkit-radial-gradient(#40ff00, #7d81ff, #00ed8a);
+ 	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
