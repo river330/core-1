@@ -33,30 +33,33 @@ mark {
 	font-family: Playfair Display;
 	font-size: 95px;
 	font-weight: bold;
-	color: hotpink;
+	color: black;
 
 }
 .switch > * {
 	opacity:  0.5;
 	transition: opacity 0.3s;
+	color: black;
 }
 
 .switch:hover > * {
 	opacity: 0.5;
 	transition: opacity 0.3s;
 	transition: font-size 0.5s ease-in-out;
+	color: black;
 
 }
 
 .switch:hover > *:hover {
 	opacity: 1.0;
 	font-size: 1.3em;
+	color: black;
 
 }
 
 a:link {
 	text-decoration: none;
-	color: hotpink;
+	color: black;
 }
 .heading {
 	display: flex;
