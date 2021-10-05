@@ -49,24 +49,26 @@ a {
 .heading {
 	display: flex;
 	flex-flow: column;
-	max-width:  auto;
+	max-width:  100%;
 	justify-content: center;
 	align-items: center;
-	padding: 50px 0px 50px 0px;
+	padding: 0px 0px 50px 0px;
+	margin: 0px 0px 0px 0px;
 
 	background-color: #CED1A5;
+	background-size: cover;
 
 }
 
 .header-line {
-	width: 80%;
+	width: 78%;
 	border: 3px solid #000000;
 }
 .h1 {
 	font-family: Playfair Display;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 130px;
+	font-size: 113px;
 	line-height: 102.5%;
 	/* or 133px */
 
@@ -85,7 +87,7 @@ a {
 	font-family: Futura;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 40px;
+	font-size: 28px;
 	line-height: 102.5%;
 	/* or 41px */
 
@@ -100,6 +102,7 @@ a {
 .content {
 	display: flex;
 	flex-direction: column;
+	max-width: 100%;
 }
 
 .question_box {
