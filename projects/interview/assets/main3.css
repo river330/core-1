@@ -39,7 +39,11 @@ mark {
 
 a:link {
 	text-decoration: none;
-	color: black;;
+	color: #4E531A;
+}
+
+a {
+	color: #4E531A;
 }
 
 .heading {

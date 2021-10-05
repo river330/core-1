@@ -59,7 +59,12 @@ mark {
 
 a:link {
 	text-decoration: none;
-	color: black;
+	color: #D91715;
+}
+a{
+
+	color: #D91715;
+
 }
 .heading {
 	display: flex;
