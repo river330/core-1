@@ -1,3 +1,6 @@
+html {
+	cursor: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 31 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='15.5' width='20.5931' height='20.5931' transform='rotate(45 15.5 0)' fill='black'/%3E%3C/svg%3E%0A") 10 10, auto;
+}
 
 .switch {
 	margin-bottom: 3px;
@@ -108,7 +111,6 @@ a {
 .question_box {
 	display: flex;
 	flex-flow: column;
-	max-width:  auto;
 	justify-content: center;
 	align-items: center;
 	padding: 50px 0px 50px 0px;
@@ -118,7 +120,7 @@ a {
 .question_row {
 	display: flex;
 	flex-direction: row-reverse;
-	width: 76%;
+	max-width: 76%;
 	padding-top: 75px;
 	padding-bottom: 50px;
 

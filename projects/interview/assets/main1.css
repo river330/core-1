@@ -1,4 +1,7 @@
+html{
+	cursor: url("data:image/svg+xml,%3Csvg width='57' height='58' viewBox='0 0 57 58' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.8109 13.1411L47.4266 22.4163L22.0861 47.7568L12.8109 13.1411Z' fill='black'/%3E%3Cpath d='M25.8451 38.4116L38.0814 26.1753L50.3177 38.4116L38.0814 50.6479L25.8451 38.4116Z' fill='black'/%3E%3C/svg%3E%0A"), auto;
 
+}
 .switch {
 	margin-bottom: 3px;
 	display: flex;
