@@ -129,10 +129,10 @@ a {
 	font-size: 80px;
 	line-height: 161.5%;
 
-	letter-spacing: -0.075em;
+	letter-spacing: -0.070em;
 	
 	-webkit-text-fill-color: transparent; 
-  	-webkit-text-stroke-width: 2px;
+  	-webkit-text-stroke-width: 3px;
   	-webkit-text-stroke-color: #4E531A;
 	transform: rotate(-90deg);
 	text-align: left;
