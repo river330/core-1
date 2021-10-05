@@ -48,10 +48,12 @@ a {
 	margin: auto;
 	margin-top: 0px;
 	margin-bottom: 60px;
-
-
-
 }
+
+.hide {
+	opacity: 0;
+}
+
 .h1 {
 	text-align: left;
 	font-family: 'Calistoga', serif;
@@ -170,7 +172,7 @@ a {
 }
 .dash_line {
 	width: 100%;
-	border: 2px dashed #000000
+	border: 3px dashed #000000
 
 }
 

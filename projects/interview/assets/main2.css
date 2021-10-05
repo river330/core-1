@@ -266,3 +266,11 @@ a{
 	height: 290px;
 	transform: rotate(90deg);
 }
+.hide {
+	opacity: 0;
+}
+
+.diamonds {
+	justify-content: center;
+	margin: auto;
+}

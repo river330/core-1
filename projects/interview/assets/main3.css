@@ -73,7 +73,7 @@ a {
 	display: flex;
 	align-items: flex-end;
 	text-align: center;
-	letter-spacing: -0.11em;
+	letter-spacing: -0.09em;
 	text-transform: uppercase;
 
 	color: #4E531A;
@@ -117,11 +117,9 @@ a {
 	flex-direction: row-reverse;
 	width: 76%;
 	padding-top: 75px;
-
-
+	padding-bottom: 50px;
 
 }
-
 .number {
 	font-family: Playfair Display;
 	font-style: normal;
@@ -149,7 +147,7 @@ a {
 	display: flex;
 	align-items: flex-end;
 	text-align: justify;
-	letter-spacing: -0.110em;
+	letter-spacing: -0.10em;
 	text-transform: uppercase;
 
 	color: #CED1A5;
