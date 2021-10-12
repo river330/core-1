@@ -1,6 +1,4 @@
-html {
-	cursor: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='14' cy='14' r='14' fill='%23913D88'/%3E%3C/svg%3E%0A"), auto;
-}
+
 
 body {
 	background-image: url(Grain-Texture-04.png),
@@ -26,19 +24,16 @@ mark {
 }
 
 .switch {
-	margin-bottom: 3px;
+	margin-bottom: 0px;
 	display: flex;
 	flex-direction: row;
 	margin: auto;
 	gap: 30px;
 	justify-content: flex-end;
 	max-width: 1200px;
-
-	font-family: Playfair Display;
 	font-size: 95px;
-	font-weight: bold;
-	color: black;
 
+	align-items: baseline;
 }
 .switch > * {
 	opacity:  0.5;
@@ -61,12 +56,27 @@ mark {
 
 }
 
+.one {
+	font-family: Calistoga;
+	font-weight: bold;
+}
+
+.two {
+	font-family: Tuppence;
+	font-weight: bold;
+}
+
+.three {
+	font-family:  Blenny;
+	font-weight: bold;
+}
 a:link {
 	text-decoration: none;
 	color: #D91715;
+	
 }
-a{
 
+a{
 	color: #D91715;
 
 }
@@ -84,10 +94,10 @@ a{
 
 .h1 {
 	text-align: center;
-	font-family: Playfair Display;
+	font-family: Tuppence;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 80px;
+	font-size: 9vw;
 	line-height: 117.81%;
 	/* or 112px */
 
@@ -99,25 +109,25 @@ a{
 
 .h2 {
 	text-align: center;
-	font-family: Futura;
-	font-style: normal;
+	font-family: interstate;
+	font-style: 500;
 	font-weight: 500;
-	font-size: 25px;
+	font-size: 1.8vw;
 	line-height: 99.81%;
 	/* or 40px */
 
-	letter-spacing: -0.02em;
 	margin: 20px 0px 0px 0px;
 
 	color: #000000;
 }
 
 .header-line {
-	width: 100%;
+	width: 60vw;
 	height: 0px;
 	border: 3px dashed #000000;
 	opacity: ;
 	margin: 0px 0px 0px 0px;
+	align-self: center;
 }
 
 .question_box {
@@ -137,10 +147,10 @@ a{
 }
 
 .number {
-	font-family: Playfair Display;
+	font-family: Tuppence;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 72px;
+	font-size: 5vw;
 	line-height: 161.5%;
 	/* or 116px */
 	margin: auto;
@@ -152,10 +162,10 @@ a{
 }
 
 .question {
-	font-family: Playfair Display;
+	font-family: Tuppence;
 	font-style: normal;
-	font-weight: bold;
-	font-size: 30px;
+	font-weight: normal;
+	font-size: 1.9vw;
 	line-height: 102.5%;
 	/* or 31px */
 	margin: auto;
@@ -165,7 +175,6 @@ a{
 	align-items: flex-end;
 	justify-content: center;
 	text-align: center;
-	text-transform: uppercase;
 
 	color: #000000;
 }
@@ -177,7 +186,7 @@ a{
 
 .number_line {
 	border: 3px solid #000000;
-	height: 165px;
+	height: 8vw;
 	align-self: center;
 }
 
@@ -186,10 +195,10 @@ a{
 	margin-bottom: 5%;
 }
 .answer {
-	font-family: Futura;
+	font-family: Interstate;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 1.4vw;
 	line-height: 161.5%;
 
 	/* or 32px */
@@ -201,7 +210,7 @@ a{
 
 .sep_line {
 	border: 3px solid #000000;
-	height: 290px;
+	height: 15vw;
 	align-self: center;
 }
 
@@ -212,10 +221,10 @@ a{
 
 }
 .emp {
-	font-family: Playfair Display;
+	font-family: Tuppence;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 45px;
+	font-size: 1.9vw;
 	line-height: 104%;
 	/* or 36px */
 
@@ -227,10 +236,10 @@ a{
 }
 
 .ref {
-	font-family: Futura;
+	font-family: Interstate;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 22px;
+	font-size: 1.4vw;
 	line-height: 138.5%;
 	/* or 25px */
 

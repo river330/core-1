@@ -1,25 +1,30 @@
-html {
-	cursor: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 31 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='15.5' width='20.5931' height='20.5931' transform='rotate(45 15.5 0)' fill='black'/%3E%3C/svg%3E%0A") 10 10, auto;
+.header-line{
+	opacity: 0;
+}
+body {
+	background-color: #E0FF87;
+}
+
+mark {
+	background-color: transparent;
+  	outline: 3px solid #E0FF87;
 }
 
 .switch {
-	margin-bottom: 3px;
+	margin-bottom: 0px;
 	display: flex;
 	flex-direction: row;
+	margin-top: 1%;
 	margin: auto;
 	gap: 30px;
 	justify-content: flex-end;
 	max-width: 1200px;
-
-	font-family: 'Playfair Display', serif;
 	font-size: 95px;
-	color: black;
-}
 
-mark {
-	background-color: rgba(235, 151, 78, 1);
+	align-items: baseline;
 }
-
+a{
+	margin: auto;
 }
 .switch > * {
 	opacity:  0.5;
@@ -32,34 +37,54 @@ mark {
 	transition: opacity 0.3s;
 	transition: font-size 0.5s ease-in-out;
 	color: black;
+
 }
 
 .switch:hover > *:hover {
 	opacity: 1.0;
 	font-size: 1.3em;
 	color: black;
+
+}
+
+.one {
+	font-family: Calistoga;
+	font-weight: bold;
+}
+
+.two {
+	font-family: Tuppence;
+	font-weight: bold;
+}
+
+.three {
+	font-family:  Blenny;
+	font-weight: bold;
 }
 
 a:link {
 	text-decoration: none;
-	color: #4E531A;
+	color: #E0FF87;
+	
 }
 
-a {
-	color: #4E531A;
+a{
+	color: #E0FF87;
+
 }
 
 .heading {
 	display: flex;
-	flex-flow: column;
-	max-width:  100%;
-	justify-content: center;
-	align-items: center;
+	flex-flow: column wrap;
+	max-width: 70.5vw;
+	margin: auto;
 	padding: 0px 0px 50px 0px;
-	margin: 0px 0px 0px 0px;
+	justify-content: center;
+	align-content: center;
 
-	background-color: #CED1A5;
-	background-size: cover;
+	background: #F24E9D;
+	box-shadow: 0px 10px 6px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 46px;
 
 }
 
@@ -68,37 +93,36 @@ a {
 	border: 3px solid #000000;
 }
 .h1 {
-	font-family: Playfair Display;
+	text-align: center;
+	font-family: Blenny;
 	font-style: normal;
-	font-weight: normal;
-	font-size: 113px;
+	font-weight: 900;
+	font-size: 10vw;
 	line-height: 102.5%;
-	/* or 133px */
+	max-width: 75%;
+	/* or 174px */
+
 
 	display: flex;
-	align-items: flex-end;
-	text-align: center;
-	letter-spacing: -0.09em;
+	flex-wrap: wrap;
 	text-transform: uppercase;
-
-	color: #4E531A;
+	margin: auto;
 	margin-top: 0px;
 	margin-bottom: 0px;
+
+	color: #540D6E;
+
 }
 
 .h2 {
-	font-family: Futura;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 28px;
-	line-height: 102.5%;
-	/* or 41px */
-
-	display: flex;
-	align-items: flex-end;
 	text-align: center;
+	font-family: P22 Underground;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 3vw;
+	line-height: 102.5%;
 
-	color: #4E531A;
+	color: #540D6E;
 	margin-top: 15px;
 	margin-bottom: 0px;
 }
@@ -115,70 +139,82 @@ a {
 	align-items: center;
 	padding: 50px 0px 50px 0px;
 
+	background: #78DFFF;
+	box-shadow: 0px 10px 6px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 60px;
+
+	max-width: 70.5vw;
+	margin: auto;
+
+	margin-top: 80px;
+	margin-bottom: 80px;
+
 }
 
 .question_row {
 	display: flex;
 	flex-direction: row-reverse;
 	max-width: 76%;
-	padding-top: 75px;
-	padding-bottom: 50px;
+	margin-bottom: 3%;
 
+	justify-content: space-between;
 }
-.number {
-	font-family: Playfair Display;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 80px;
-	line-height: 161.5%;
 
-	letter-spacing: -0.070em;
-	
-	-webkit-text-fill-color: transparent; 
-  	-webkit-text-stroke-width: 3px;
-  	-webkit-text-stroke-color: #4E531A;
-	transform: rotate(-90deg);
+.number {
+	font-family: Blenny;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 6vw;
+	line-height: 161.5%;
+	margin: 0px 0px 0px 0px;
+
+	/* identical to box height, or 323px */
+
+	text-align: right;
+
+	color: #540D6E;
 	text-align: left;
+	text-transform: lowercase;
+
 }
 
 .question {
-	font-family: Playfair Display;
+	font-family: P22 Underground;
 	font-style: normal;
-	font-weight: normal;
-	font-size: 100px;
+	font-weight: 800;
+	font-size: 3vw;
 	line-height: 102.5%;
-	/* or 102px */
+	max-width: 70%;
+	/* or 72px */
 
 	display: flex;
 	align-items: flex-end;
-	text-align: justify;
-	letter-spacing: -0.10em;
+	text-align: right;
 	text-transform: uppercase;
 
-	color: #CED1A5;
+	color: #540D6E;
 	margin: 0px 0px 0px 0px;
 }
 
 .number_line {
 	height: 0px;
 	width: 76%;
-	border: 3px solid #000000;
+	border: 3px solid #E0FF87;
 
 }
 .answer {
-	font-family: Futura;
+	font-family: P22 Underground;
 	font-style: normal;
-	font-weight: 500;
-	font-size: 24px;
+	font-weight: 600;
+	font-size: 1.5vw;
 	line-height: 44px;
-	width: 76%;
-	margin: auto;
 	/* or 185% */
-
+	max-width: 76%;
 	text-align: justify;
-
-	color: #4E531A;
+	color: #540D6E;
+	margin: auto;
 }
+
 .answer_row{
 	margin-top:25px;
 }
@@ -194,18 +230,20 @@ a {
 }
 
 .emp {
-	align-self: flex-start;
-
-	font-family: Playfair Display;
+	align-self: center;
+	font-family: P22 Underground;
 	font-style: normal;
-	font-weight: normal;
-	font-size: 60px;
-	line-height: 108%;
-	/* or 65px */
+	font-weight: 800;
+	font-size: 2.5vw;
+	line-height: 102.5%;
+	/* or 72px */
+	text-align: center;
 
-	letter-spacing: -0.09em;
+	display: flex;
+	text-transform: uppercase;
 
-	color: #4E531A;
+	color: #540D6E;
+
 }
 .answer_row {
 	margin-bottom: 30px;
@@ -213,16 +251,16 @@ a {
 .ref {
 	align-items: flex-end;
 
-	font-family: Futura;
+	font-family: P22 Underground;
 	font-style: normal;
-	font-weight: 500;
-	font-size: 25px;
+	font-weight: 600;
+	font-size: 1.5vw;
 	line-height: 138.5%;
 	/* or 35px */
 
-	text-align: right;
+	text-align: center;
 
-	color: #4E531A;
+	color: #540D6E;
 }
 
 .ref_10 {
@@ -230,12 +268,27 @@ a {
 }
 
 .v2 {
-	background-color: #CED1A5;
+	background: #F24E9D;
+	box-shadow: 0px 10px 6px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 46px;
 
 }
 .ques2 {
-	color: #FFF8E8;
+	font-family: P22 Underground;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 3vw;
+	line-height: 102.5%;
+	max-width: 80%;
+	/* or 72px */
 
+	display: flex;
+	align-items: flex-end;
+	text-align: right;
+	text-transform: uppercase;
+
+	color: #540D6E;
+	margin: 0px 0px 0px 0px;
 }
 
 .four {
@@ -253,7 +306,7 @@ a {
 .dash_line {
 	height: 15px;
 	width: 15px;
-	background-color: #000000;
+	background-color: #E0FF87;
 
 	transform: rotate(45deg);
 
