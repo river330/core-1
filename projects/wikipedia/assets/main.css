@@ -1,0 +1,217 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	flex-flow: flow;
+	max-width: 2000px;
+	margin-bottom: 135px;
+}
+
+h2 {
+	margin-top: 20px;
+	margin-bottom: -50px;
+}
+
+.header * {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body{
+	background-image: url("hotel.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+	background-size: auto;
+
+}
+
+h2 {
+	font-family: 'Red Rose';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 45px;
+	line-height: 94px;
+	text-align: center;
+	letter-spacing: 0.145em;
+
+	color: #FDF6DA;
+
+
+}
+
+h1 {
+	position: relative;
+	font-family: 'Red Rose';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 65px;
+	line-height: 94px;
+	text-align: center;
+	letter-spacing: 0.145em;
+
+	color: #FDF6DA;
+
+	margin-top: 10px;
+	margin-bottom: 0px;
+
+}
+
+h3 {
+	font-family: Red Rose;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 50px;
+	/* identical to box height */
+
+	text-align: justify;
+	letter-spacing: 0.2em;
+	text-transform: lowercase;
+	margin-bottom: -10px;
+
+	color: #FDF6DA;
+
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.header_line {
+	border: 2px solid #A7717F;
+	width: 45%;
+}
+
+.title_column {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+  	align-items: center;
+
+}
+.title_column {
+  	height: 250px;
+	margin: auto;
+
+	background-color: #75638B;
+}
+.title_lettering {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	font-family: Futura;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 42px;
+	line-height: 65px;
+	text-align: center;
+	letter-spacing: 0.145em;
+	text-transform: uppercase;
+
+	color: #FDF6DA;
+	border-bottom: 4px solid;
+}
+
+.info_column {
+	margin: auto;
+	text-align: justify;
+    text-align-last: center;
+    margin-top: 30px;
+
+    background-color: #75638B;
+ }
+ .info_lettering {
+    font-family: Futura;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 40px;
+	letter-spacing: 0.1em;
+
+	margin: auto;
+	padding: 50px 50px;
+	color: #FDF6DA;
+}
+
+.plot {
+	max-width: 60%;
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.actors, .production {
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	justify-content: space-around;
+	max-width: 70%;
+
+	gap: 20px;
+}
+
+.info_row {
+	text-align: center;
+	flex-grow: 3;
+
+	background-color: #6182A1;
+}
+
+.title_row {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+  	align-items: center;
+	flex-grow: 1;
+	background-color: #6182A1;
+}
+
+.actor {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.actor:hover::after {
+	display: block;
+	content: attr(data-desc);
+	font-family: 'Red Rose';
+	font-weight: 300;
+}
+
+.actorlist {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Futura';
+
+}
+
+.plot, .actors {
+	margin-bottom: 300px;
+}
+
+.production {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	max-width: 60%;
+}
+
+ .prod::after {
+	display: block;
+	justify-content: center;
+	content: attr(data-desc);
+	font-family: 'Red Rose';
+	font-weight: 300;
+	font-size: 20px;
+
+}
+
+.prod {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 0px;
+	background-color: #D9859D;
+}
+
