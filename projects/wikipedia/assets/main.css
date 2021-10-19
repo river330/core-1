@@ -48,7 +48,7 @@ h3 {
 	line-height: 50px;
 	/* identical to box height */
 
-	text-align: justify;
+	text-align: center;
 	letter-spacing: 0.2em;
 	text-transform: lowercase; 
 
@@ -251,7 +251,7 @@ body{
 @media (max-width: 768px) {
 	body{
 		background-image: url("hotelmobile.png");
-		background-repeat: no-repeat;
+		background-repeat: repeat-y;
 		background-attachment: fixed;
 		background-position: center; 
 		background-size: auto;
@@ -259,7 +259,7 @@ body{
 	}
 
 	.header {
-		padding: 300px 20px;
+		padding: 250px 20px;
 		display: flex;
 		flex-direction: column;
 		margin: auto;
