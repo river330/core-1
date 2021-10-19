@@ -1,20 +1,88 @@
 .header {
 	display: flex;
 	flex-direction: column;
-	flex-flow: flow;
-	max-width: 2000px;
-	margin-bottom: 135px;
+	justify-content: center;
+
+	padding: 300px 200px;
+	max-width: 80%;
+}
+.header * {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	max-width: 80%;
+	justify-content: center;
+	margin: auto;
+
+	gap: 30px;
+}
+
+a {
+	font-family: 'Futura';
+	color: #FDF6DA;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #5E4251;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #5E4251;
+}
+
+h3 {
+	font-family: Red Rose;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 50px;
+	/* identical to box height */
+
+	text-align: justify;
+	letter-spacing: 0.2em;
+	text-transform: lowercase; 
+
+	color: #FDF6DA;
+
 }
 
 h2 {
-	margin-top: 20px;
-	margin-bottom: -50px;
+	margin-top: 0px;
+	margin-bottom: -80px;
+
+	font-family: 'Red Rose';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 45px;
+	line-height: 94px;
+	text-align: center;
+	letter-spacing: 0.145em;
+
+	color: #FDF6DA;
+
 }
 
-.header * {
+h1 {
+	color: #FDF6DA;
+	font-family: 'Red Rose';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 65px;
+	line-height: 94px;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	letter-spacing: 0.145em;
+
+
 }
 
 body{
@@ -26,60 +94,6 @@ body{
 
 }
 
-h2 {
-	font-family: 'Red Rose';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 45px;
-	line-height: 94px;
-	text-align: center;
-	letter-spacing: 0.145em;
-
-	color: #FDF6DA;
-
-
-}
-
-h1 {
-	position: relative;
-	font-family: 'Red Rose';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 65px;
-	line-height: 94px;
-	text-align: center;
-	letter-spacing: 0.145em;
-
-	color: #FDF6DA;
-
-	margin-top: 10px;
-	margin-bottom: 0px;
-
-}
-
-h3 {
-	font-family: Red Rose;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 30px;
-	line-height: 50px;
-	/* identical to box height */
-
-	text-align: justify;
-	letter-spacing: 0.2em;
-	text-transform: lowercase;
-	margin-bottom: -10px;
-
-	color: #FDF6DA;
-
-	margin-top: 0px;
-	margin-bottom: 0px;
-}
-
-.header_line {
-	border: 2px solid #A7717F;
-	width: 45%;
-}
 
 .title_column {
 	display: flex;
@@ -109,7 +123,7 @@ h3 {
 	text-transform: uppercase;
 
 	color: #FDF6DA;
-	border-bottom: 4px solid;
+	border-bottom: 4px double;
 }
 
 .info_column {
@@ -133,11 +147,13 @@ h3 {
 	color: #FDF6DA;
 }
 
-.plot {
+.plot, .development, .casting, .costumes {
 	max-width: 60%;
 	margin: auto;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-top: 200px;
+	margin-bottom: 200px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .actors, .production {
@@ -146,6 +162,12 @@ h3 {
 	margin: auto;
 	justify-content: space-around;
 	max-width: 70%;
+
+	margin-top: 200px;
+	margin-bottom: 200px;
+
+	padding-top: 100px;
+	padding-bottom: 100px;
 
 	gap: 20px;
 }
@@ -183,10 +205,7 @@ h3 {
 	flex-direction: column;
 	font-family: 'Futura';
 
-}
 
-.plot, .actors {
-	margin-bottom: 300px;
 }
 
 .production {
@@ -194,7 +213,6 @@ h3 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: auto;
 	max-width: 60%;
 }
 
@@ -208,10 +226,82 @@ h3 {
 
 }
 
+.dev {
+	background-color: #C6617F;
+}
+
 .prod {
+	font-size: 30px;
+
 	padding-top: 15px;
 	padding-bottom: 15px;
 	border-bottom: 0px;
 	background-color: #D9859D;
 }
 
+.cast {
+	background-color: #A7717F;
+}
+
+.cost {
+	background-color: #885C68;
+}
+
+
+@media (max-width: 768px) {
+	.header {
+		padding: 300px 20px;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		max-width: 90%;
+	}
+
+	h2 {
+		margin-bottom: -35px;
+		font-size: 25px;
+	}
+
+	h1 {
+		font-size: 40px;
+		line-height: 50px;
+		text-align: center;
+		margin: auto;
+		max-width: 60%;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	.navigation {
+		flex-wrap: wrap;
+		max-width: 95%;
+		margin: auto;
+		margin-top: 15px;
+		font-size: 14px;
+	}
+
+	.plot, .development, .casting, .costumes {
+		max-width: 80%;
+		margin: auto;
+		margin-top: 100px;
+		margin-bottom: 100px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.actors, .production {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 80%;
+	
+	}
+	.info_lettering {
+		font-size: 15px;
+		line-height: 30px;
+	}
+
+}
+ 

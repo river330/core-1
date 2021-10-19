@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="assets/main.css">
+	<title>Wikipedia</title>
+	<link rel="shortcut icon" type="image/png" href="assets/hotelicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,11 +14,18 @@
 	<div class="header">
  		<h2>THE</h2>
  		<h1>Grand Budapest Hotel</h1>
- 		<div class="header_line"></div>
+ 		<div class="navigation">
+ 			<a href="#plot">PLOT</a>
+ 			<a href="#actors">ACTORS</a>
+ 			<a href="#production">PRODUCTION</a>
+ 			<a href="#development">DEVELOPMENT</a>
+ 			<a href="#casting">CASTING</a>
+ 			<a href="#costumes">COSTUMES</a>
+ 		</div>
  		<h3>a film by Wes Anderson</h3>
 	</div>
 	<div class="container">
-		<div class="plot">
+		<div class="plot" id="plot">
 			<div class="title_column">
 				<p class="title_lettering">The Plot</p>
 			</div>
@@ -24,7 +33,7 @@
 				<div class="info_lettering">Monsieur Gustave H., famed concierge of a twentieth-century mountainside resort in the fictional country of Zubrowka, is  framed for the murder of a wealthy dowager. He and his recently befriended protégé Zero embark on a quest for fortune and a priceless Renaissance painting amidst the backdrop of an encroaching fascist regime.</div>
 			</div>
 		</div>
-		<div class="actors">
+		<div class="actors" id="actors">
 			<div class="title_row">
 				<p class="title_lettering">Actors</p>
 			</div>
@@ -48,10 +57,40 @@
 					<span class="actor" data-desc="the wealthy dowager and secret owner of the hotel">
 						Tilda Swinton as Madame D.
 					</span>
+					<span class="actor" data-desc="the police investigator of Madame's murder">
+						Edward Norton as Albert Henckels
+					</span>
+					<span class="actor" data-desc="a shifty butler who works for Madame">
+						Mathieu Amalric as Serge X
+					</span>
+					<span class="actor" data-desc="the lawyer representing Grand Budapest interests">
+						Jeff Goldblum as Deputy Vilmos Kovacs
+					</span>
+					<span class="actor" data-desc="leader of a prison gang at Checkpoint Nineteen">
+						Harvey Keitel as Ludwig
+					</span>
+					<span class="actor" data-desc="writer of The Grand Budapest Hotel">
+						Tom Wilkinson as Author
+					</span>
+					<span class="actor" data-desc="">
+						Jude Law as the young Author in 1968
+					</span>
+					<span class="actor" data-desc="Gustave's friend and one of several concierges affiliated with the Society of the Crossed Keys">
+						Bill Murray as M. Ivan
+					</span>
+					<span class="actor" data-desc="the Grand Budapest's concierge in 1968">
+						Jason Schwartzman as M. Jean
+					</span>
+					<span class="actor" data-desc="maid at Schloss Lutz">
+						Léa Seydoux as Clotilde
+					</span>
+					<span class="actor" data-desc="a Society of the Crossed Keys concierge">
+						Owen Wilson as M. Chuck
+					</span>
 				</div>
 			</div>
 		</div>
-		<div class="production">
+		<div class="production" id="production">
 			<div class="title_row prod">
 				<span class="title_lettering prod" data-desc="Wes Anderson">DIRECTED BY</span>
 			</div>
@@ -69,6 +108,32 @@
 			</div>
 			<div class="title_row prod">
 				<span class="title_lettering prod" data-desc="Alexandre Desplay">MUSIC BY</span>
+			</div>
+		</div>
+		<div class="development" id="development">
+			<div class="title_column dev">
+				<p class="title_lettering">Development</p>
+			</div>
+			<div class="info_column dev">
+				<div class="info_lettering">Drafting of The Grand Budapest Hotel story began in 2006, when Wes Anderson produced an 18-page script with longtime collaborator Hugo Guinness. They imagined a fragmented tale of a character inspired by a mutual friend, based in modern France and the United Kingdom.Though their prototype led to a roughly 12-minute-long cut, the Anderson–Guinness collaboration stalled when the two men were unable to coalesce a uniform sequence of events to advance their story. By this time, Anderson had begun researching the work of Austrian novelist Stefan Zweig, with which he was vaguely familiar. He became fascinated with Zweig, gravitating to Beware of Pity (1939), The World of Yesterday (1942), and The Post Office Girl (1982) for their fatalist mythos and Zweig's portrait of early twentieth-century Vienna.Anderson also referenced period images and urbane Europe-set mid-century Hollywood comedies.He ultimately pursued a historical pastiche with an alternate timeline, disillusioned with popular media's romanticism of pre-World War II European history.Once The Grand Budapest Hotel took definite form, Anderson resumed the scriptwriting, finishing the screenplay in six weeks.The producers tapped Jay Clarke to supervise production of the film's animatics, with voiceovers by Anderson.<br><br>Anderson's sightseeing in Europe was another source of inspiration for The Grand Budapest Hotel's visual motifs.The writer-director visited Vienna, Munich, and other major cities before the project's conception, but most location scouting began after the Cannes premiere of his coming-of-age drama Moonrise Kingdom (2012). He and the producers toured Budapest, small Italian spa towns, and the Czech resort Karlovy Vary before a final stop in Germany, consulting hotel staff to develop an accurate idea of a real-life concierge's work.</div>
+			</div>
+		</div>
+		<div class="casting" id="casting">
+			<div class="title_column cast">
+				<p class="title_lettering">CASTING</p>
+			</div>
+			<div class="info_column cast">
+				<div class="info_lettering">A seventeen-actor ensemble received star billing in The Grand Budapest Hotel. Anderson customarily employs a troupe of longtime collaborators—Bill Murray, Adrien Brody, Edward Norton, Owen Wilson, Tilda Swinton, Harvey Keitel, Willem Dafoe, Jeff Goldblum, and Jason Schwartzman have worked on one or more of his projects.Norton and Murray immediately signed when sent the script. The Grand Budapest Hotel ensemble comprised mostly bit cameos. Because of the limitations of such roles, Brody said that the most significant challenge was balancing the film's comedy with the otherwise solemn subject matter. Once hired, actors were encouraged to study the source material to prepare. Dafoe and Fiennes in particular found the animatics helpful in conceptualizing Anderson desired an English actor to play Gustave, and Fiennes was an actor he sought to work with for several years. Fiennes, surprised by the offer, was eager to depart from his famously villainous roles and found Gustave's panache compelling.Fiennes said he was initially unsure how to approach his character because the extent of Anderson's oversight meant actors could not improvise on set, constraining his usually instinctive performing style.The direction of Gustave's persona then became another question of tone, whether the portrayal be hyper-camp or understated. Fiennes drew on several sources to shape his character's persona,among them his triple role as Hungarian-Jewish men escaping fascist persecution in the István Szabó-directed drama Sunshine (1999), his brief stint as a young porter at Brown's Hotel in London, and the experience reading The World of Yesterday.<br><br>Casting director Douglas Aibel was responsible for hiring a suitable actor to play young Zero. Aibel's months-long search for prospective actors proved troublesome as he was unable to fulfill the specifications for an unknown teenage actor of Arabic descent. "We were just trying to leave no stone unturned in the process." Filmmakers held auditions in Egypt, Lebanon, Israel, France, England, and the United States before revising the role's ethnic criterion.Eventually the filmmakers narrowed their search to Tony Revolori and his older brother Mario, novices of Guatemalan descent, and Tony landed the part after one taped audition.He and Anderson rehearsed together for over four months before the start of filming to build a rapport.Abraham spent about a week on set filming his scenes as the elderly Zero.<br><br>Saoirse Ronan joined The Grand Budapest Hotel in November 2012. Though a longtime Anderson fan, Ronan feared the deadpan, theatrical acting style characteristic of Anderson-directed films would be too difficult to master.She was reassured by the writer-director's conviction, "He guides everyone extremely well. He is very secure in his vision and he is very comfortable with everything he does. He knows it is going to work." The decision to play Agatha with Ronan's native Irish accent was Anderson's idea, after experimenting with German, English, and American accents; they felt an Irish accent projected a warm, feisty spirit into Agatha.</div>
+			</div>
+		</div>
+		<div class="costumes" id="costumes">
+			<div class="title_column cost">
+				<p class="title_lettering">COSTUMES</p>
+			</div>
+			<div class="info_column cost">
+				<div class="info_lettering">The filmmakers gave the characters distinct looks. They distinguished men with facial hair to complement their sharp style.Gustave's wardrobe was intended to evoke "a sense of perfection and control" even in his collapsing livelihood. Anderson and Canonero visualized Agatha with a Mexico-shaped facial birthmark and a wheat blade in her hair, costumed to reflect her working-class stature and the brightness of her pastries. Madame was dressed in a silk velvet coat-and-gown-ensemble with Klimtesque handprint patterns and mink trim by Fendi, from a previous professional relationship with Anderson and Canonero. Fendi developed the gray astrakhan fur overcoat for Norton's Albert, and loaned other furs to assist the needs of the shoot. To age Swinton, makeup artist Mark Coulier applied soft silicone rubber prosthetics encapsulated in dissolvable plastic molding on her face. Dafoe's Jopling wore a Prada leather coat inspired by outerwear for military dispatch riders, adorned with custom silver knuckle pieces from jeweler Waris Ahluwalia (a close friend of Anderson's). Canonero modified the coat with fine red-wool stitching and a weapons compartment inside the front lapel.</div>
+			</div>
+		</div></div>
 			</div>
 		</div>
 	</div>
