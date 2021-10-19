@@ -1,3 +1,6 @@
+html{
+	cursor: url(assets/hotelicon.png);
+}
 .header {
 	display: flex;
 	flex-direction: column;
@@ -85,7 +88,7 @@ h1 {
 
 }
 
-body{
+body {
 	background-image: url("hotel.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -251,7 +254,7 @@ body{
 @media (max-width: 768px) {
 	body{
 		background-image: url("hotelmobile.png");
-		background-repeat: repeat-y;
+		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center; 
 		background-size: auto;
@@ -310,6 +313,11 @@ body{
 	.info_lettering {
 		font-size: 15px;
 		line-height: 30px;
+	}
+	.title_lettering {
+		max-width: 60%;
+		text-align: center;
+		justify-self: center;
 	}
 
 }
