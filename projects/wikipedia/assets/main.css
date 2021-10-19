@@ -249,6 +249,15 @@ body{
 
 
 @media (max-width: 768px) {
+	body{
+		background-image: url("hotelmobile.png");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center; 
+		background-size: auto;
+
+	}
+
 	.header {
 		padding: 300px 20px;
 		display: flex;
