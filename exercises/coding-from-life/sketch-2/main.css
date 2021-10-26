@@ -319,17 +319,17 @@ body {
 }
 
 .squash_stem {
-  border-bottom: 10px solid brown;
-  border-left: 3px solid transparent;
-  border-right: 3px solid transparent;
+  border-bottom: 1vw solid brown;
+  border-left: 0.3vw solid transparent;
+  border-right: 0.3vw solid transparent;
   height: 0;
-  width: 9px;
+  width: .9vw;
 
   transform: rotate(240deg);
 
   position: relative;
-  bottom: 7px;
-  left: 9px;
+  bottom: .7vw;
+  left: .9vw;
 }
 
 .vase {
