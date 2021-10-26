@@ -5,8 +5,43 @@
   width and height. For this sketch you can position elements by using pixel values.
 */
 
+
 body {
   background-color: black;
+}
+
+.button {
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+
+
+}
+
+a {
+  font-family: Futura;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+/* selected link */
+a:active {
+  color: white;
 }
 
 .frame {

@@ -10,7 +10,39 @@
 body {
   background-color: black;
 }
+.button {
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-top: 2vw;
 
+
+}
+
+a {
+  font-family: Futura;
+  text-decoration: none;
+  font-size: 2vw;
+}
+
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
 .frame {
   width: 95vw;
   height: 57vw;
