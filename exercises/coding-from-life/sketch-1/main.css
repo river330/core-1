@@ -1,0 +1,478 @@
+/*
+  Coding from Life – Sketch 1: fixed layout
+
+  For sketch 1 you'll be positioning elements relative to an element with a fixed
+  width and height. For this sketch you can position elements by using pixel values.
+*/
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 1000px;
+  height: 600px;
+  background: #F8F8F8;
+  margin: 30px auto;
+  position: relative;
+
+  overflow: hidden;
+  z-index: -5;
+}
+
+/* Your CSS goes here */
+
+.table_edge {
+  width: 850px;
+  height: 40px;
+  left: 0px;
+  bottom: 50px;
+  position: absolute;
+  background-color: #A7A7A7;
+  z-index: -2;
+
+}
+
+.table_top{
+  width: 850px;
+  height: 170px;
+  right: 200px;
+  bottom: 90px;
+  position: absolute;
+  background-color: #D9D9D9;
+  z-index: -2;
+
+  transform: skew(30deg);
+}
+
+.leg1{
+  width: 70px;
+  height: 70px;
+  bottom: 0px;
+  right: 150px;
+  position: absolute;
+  background-color: #36210F;
+
+  z-index: -4;
+}
+
+.pumpkin_bottom {
+  width: 130px;
+  height: 110px;
+  background: linear-gradient(90deg, rgba(254,168,26,1) 0%, rgba(224,92,12,1) 11%, rgba(254,168,26,1) 39%, rgba(224,92,12,1) 53%, rgba(254,168,26,1) 56%, rgba(224,92,12,1) 69%, rgba(254,168,26,1) 78%, rgba(224,92,12,1) 98%);
+  border-radius: 60px / 60px;
+
+  bottom: 160px;
+  right: 300px;
+  position: absolute;
+
+  z-index: 5;
+}
+
+.pumpkin_top {
+  position: absolute;
+  bottom: 250px;
+  right: 330px;
+
+  border-bottom: 25px solid linear-gradient(90deg, rgba(254,168,26,1) 0%, rgba(224,92,12,1) 11%, rgba(254,168,26,1) 39%, rgba(224,92,12,1) 53%, rgba(254,168,26,1) 56%, rgba(224,92,12,1) 69%, rgba(254,168,26,1) 78%, rgba(224,92,12,1) 98%);;
+  border-left: 21px solid transparent;
+  border-right: 21px solid transparent;
+  height: 0px;
+  width: 30px;
+  z-index: 5;
+
+}
+
+.pumpkin_stem{
+  position: absolute;
+  bottom: 247px;
+  right: 355px;
+
+  height: 30px;
+  width: 18px;
+  background-color: brown;
+}
+
+.pumpkin_shadow {
+  width: 140px;
+  height: 50px;
+  background: darkgray;
+  border-radius: 60px / 60px;
+  z-index: 1;
+
+  position: absolute;
+  bottom: 150px;
+  right: 250px;
+  transform: skew(10deg);
+
+  filter: blur(3px)
+}
+
+.cauldron {
+  width: 125px;
+  height: 125px;
+  background: #252120;
+  border-radius: 70px / 60px;
+
+  bottom: 163px;
+  left: 160px;
+  position: absolute;
+
+  box-shadow: inset -3px -15px 8px 3px black;
+
+  z-index: 4;
+}
+
+.cauldron_lid {
+  position: absolute;
+  bottom: 248px;
+  left: 162px;
+  position: absolute;
+
+  z-index: 5;
+}
+
+.cauldron_top {
+  width: 120px;
+  height: 40px;
+  background: #34302F;
+  border-radius: 200px /100px;
+
+  position: relative;
+  top: 20px;
+
+}
+
+.cauldron_handle {
+  width: 20px;
+  height: 20px;
+  background: #252120;
+  border-radius: 20px /20px;
+
+  box-shadow: 0px 4px 4px black;
+
+  z-index: 6;
+  left: 50px;
+  bottom: 30px;
+
+  position: relative;
+}
+
+.cauldron_bottom {
+  width: 93px;
+  height: 30px;
+  background: #191615;
+  border-radius: 200px /100px;
+
+  position: absolute;
+  bottom: 160px;
+  left: 176px;
+
+
+  z-index: 3;
+
+}
+
+.cauldron_shadow {
+  width: 400px;
+  height: 90px;
+  background: darkgray;
+  border-radius: 60px / 60px;
+  z-index: 1;
+
+  position: absolute;
+  bottom: 140px;
+  left: 220px;
+  transform: skew(10deg);
+
+  filter: blur(3px)
+}
+
+.candle_1 {
+  position: absolute;
+  left: 310px;
+  bottom: 120px;
+
+  z-index: 4;
+}
+
+.candle_bottom {
+  width: 65px;
+  height: 25px;
+  border: 5px solid #FFD159;
+  border-radius: 130px /100px;
+
+  bottom: 10px;
+
+
+  position: relative;
+
+}
+
+.candlestick {
+  width: 5px;
+  height: 103px;
+  background: #FFD159;
+
+  left: 35px;
+  position: relative;
+}
+
+.candleholder {
+  width: 20px;
+  height: 50px;
+  background: #FFD159;
+
+  left: 28px;
+  top: 5px;
+  position: relative;
+}
+
+.candle {
+  width: 18px;
+  height: 60px;
+  background: white;
+
+  z-index: 3;
+
+  left: 29px;
+  top: 5px;
+  position: relative;
+}
+
+.wick {
+  width: 5px;
+  height: 10px;
+  background: black;
+
+  position: relative;
+  left: 35px;
+  top: 7px;
+
+  z-index: 4;
+}
+
+.candle_2 {
+  position: absolute;
+  bottom: 185px;
+  right: 400px;
+
+  z-index: 3;
+
+}
+
+.candle_shadow_1 {
+  width: 200px;
+  height: 40px;
+  background: darkgray;
+  border-radius: 60px / 60px;
+  z-index: 1;
+
+  position: absolute;
+  bottom: 120px;
+  left: 340px;
+  transform: skew(10deg);
+
+  filter: blur(3px)
+}
+
+.squash {
+  position: relative;
+
+  width: 120px;
+  height: 60px;
+
+  background: #EFD9A0;
+  border-radius: 264px;
+  transform: rotate(-28.89deg);
+
+  box-shadow: inset 2px -6px 8px 0px #CB9A53;
+
+}
+
+.squash_bottom {
+  width: 70px;
+  height: 70px;
+  background: #EFD9A0;
+  border-radius: 60px / 60px;
+
+  position: relative;
+  top: 52px;
+  left: 53px;
+
+  box-shadow: inset -10px -20px 4px 0px #CB9A53;
+
+
+}
+
+
+.squash_shape {
+  position: absolute;
+  right: 430px;
+  bottom: 150px;
+
+  z-index: 4;
+}
+
+.squash_stem {
+  border-bottom: 10px solid brown;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  height: 0;
+  width: 9px;
+
+  transform: rotate(240deg);
+
+  position: relative;
+  bottom: 7px;
+  left: 9px;
+}
+
+.vase {
+  width: 55px;
+  height: 130px;
+
+  background: rgba(232, 232, 232, 0.6);
+
+  position: relative;
+  right: 7px;
+}
+
+.flower {
+  position: absolute;
+  left: 425px;
+  bottom: 220px;
+
+  z-index: 2;
+}
+
+.vase_bottom {
+  position: relative;
+
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid rgba(232, 232, 232, 0.6);
+
+}
+
+.vase_bottom_2{
+  position: relative;
+
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 26px solid rgba(232, 232, 232, 0.6);
+}
+
+.flower_stem{
+  position: relative;
+
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 165px solid #729330;
+
+}
+
+.the_vase {
+  position: absolute;
+  left: 430px;
+  bottom: 190px;
+
+  z-index: 3;
+}
+
+.leaves {
+  width: 100px;
+  height: 50px;
+  background: #729330;
+  border-radius: 100px / 50px;
+
+  position: relative;
+  right: 50px;
+  top: 95px;
+
+  transform: rotate(45deg);
+}
+
+.two {
+  position: relative;
+  transform: rotate(90deg);
+  top: 40px;
+  right: 27px;
+}
+
+.three {
+  position: relative;
+  top: -10px;
+  right: 0px;
+
+
+  transform: rotate(120deg);
+}
+
+.flower_head {
+  width: 60px;
+  height: 15px;
+  border-radius: 20px;
+  background: red;
+
+  position: relative;
+
+}
+
+.flower_head::after, .flower_head::before {
+  content: '';
+  position: absolute;
+  background: red;
+  border-radius: 20px;
+  width: 60px;
+  height: 15px;
+  transform: rotate(60deg);
+}
+
+.flower_head::before {
+  transform: rotate(-60deg);
+}
+.flower_heads {
+  position: absolute;
+  left: 400px;
+  top: 100px;
+
+  z-index: 6;
+}
+
+.f1 {
+  position: relative;
+  left: 52px;
+  top: 20px;
+
+}
+
+.f2 {
+  position: relative;
+  bottom: 6px;
+}
+
+.f3 {
+  position: relative;
+  left: 20px;
+}
+
+.f4 {
+  position: relative;
+  right: 28px;
+  bottom: 8px;
+}
+
+.f5 {
+  left: 40px;
+  bottom: 70px;
+}
+
+
+

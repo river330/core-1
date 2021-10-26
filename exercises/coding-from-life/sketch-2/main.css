@@ -1,0 +1,486 @@
+/*
+  Coding from Life – Sketch 2: fluid layout
+
+  For sketch 2 you'll be positioning elements relative to a fluid container. This
+  means you'll need to use percentages when positioning and sizingelements within
+  your frame.
+*/
+
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: #F8F8F8;
+  margin: 2.5vw auto;
+  position: relative;
+
+  overflow: hidden;
+  z-index: -5;
+}
+
+/* Your CSS goes here */
+
+.table_edge {
+  width: 100.8vw;
+  height: 4vw;
+  right: 18vw;
+  top: 31vw;
+  position: relative;
+  background-color: #A7A7A7;
+  z-index: -2;
+
+}
+
+.table_top{
+  width: 95vw;
+  height: 18vw;
+  right: 17.4vw;
+  top: 31vw;
+  position: relative;
+  background-color: #D9D9D9;
+  z-index: -2;
+
+  transform: skew(30deg);
+}
+
+.leg1{
+  width: 7vw;
+  height: 9vw;
+  top: 27vw;
+  left: 75.7vw;
+  position: relative;
+  background-color: #36210F;
+
+  z-index: -4;
+}
+
+.pumpkin_shape {
+  position: absolute;
+  left: 55vw;
+  bottom: 18vw;
+}
+
+.pumpkin_bottom {
+  width: 12.5vw;
+  height: 10.33vw;
+  background: linear-gradient(90deg, rgba(254,168,26,1) 0%, rgba(224,92,12,1) 11%, rgba(254,168,26,1) 39%, rgba(224,92,12,1) 53%, rgba(254,168,26,1) 56%, rgba(224,92,12,1) 69%, rgba(254,168,26,1) 78%, rgba(224,92,12,1) 98%);
+  border-radius: 60vw / 60vw;
+
+ 
+  position: relative;
+  top: 11.5vw;
+
+  z-index: 5;
+
+}
+
+.pumpkin_stem{
+  position: relative;
+  left: 5.3vw;
+
+  height: 5vw;
+  width: 1.8vw;
+  background-color: brown;
+}
+
+.pumpkin_shadow {
+  width: 14vw;
+  height: 5.4vw;
+  background: darkgray;
+  border-radius: 60vw / 60vw;
+  z-index: 1;
+
+  position: relative;
+  left: 2vw;
+  top:  3.4vw;
+ 
+  transform: skew(10deg);
+
+  filter: blur(3px)
+}
+
+.cauldron {
+  width: 10.9vw;
+  height: 10.9vw;
+  background: #252120;
+  border-radius: 70vw / 60vw;
+
+ 
+  position: relative;
+
+  box-shadow: inset -3px -15px 8px 3px black;
+
+  z-index: 4;
+}
+
+.cauldron_shape {
+  bottom: -1vw;
+  left: 0vw;
+  position: absolute;
+
+}
+
+.cauldron_lid {
+  position: relative;
+
+  bottom: 11vw;
+  z-index: 5;
+}
+
+.cauldron_shape *{
+  margin: auto;
+}
+
+.cauldron_top {
+  width: 11.5vw;
+  height: 4vw;
+  background: #34302F;
+  border-radius: 200px /100px;
+
+  position: relative;
+
+
+}
+
+.cauldron_handle {
+  width: 2vw;
+  height: 2vw;
+  background: #252120;
+  border-radius: 20vw /20vw;
+
+  box-shadow: 0px 4px 4px black;
+
+  z-index: 6;
+ 
+
+  position: relative;
+  bottom: 5vw;
+}
+
+.cauldron_bottom {
+  width: 8.5vw;
+  height: 3vw;
+  background: #191615;
+  border-radius: 200vw /100vw;
+
+  position: relative;
+  bottom: 8.3vw;
+
+
+  z-index: 3;
+
+}
+
+.cauldron_shadow {
+  width: 40vw;
+  height: 9vw;
+  background: darkgray;
+  border-radius: 60vw / 60vw;
+  z-index: 1;
+
+  position: relative;
+  bottom: 14vw;
+  left: 21vw;
+ 
+  transform: skew(10deg);
+
+  filter: blur(3px)
+}
+
+.candle_1 {
+  position: absolute;
+  left: 28.3vw;
+  bottom: 10.5vw;
+
+  z-index: 4;
+}
+
+.candle_bottom {
+  width: 6.5vw;
+  height: 3vw;
+  border: 0.5vw solid #FFD159;
+  border-radius: 13vw /10vw;
+
+  bottom: 1.6vw;
+
+
+  position: relative;
+
+}
+
+.candlestick {
+  width: 0.5vw;
+  height: 10vw;
+  background: #FFD159;
+
+  left: 3.5vw;
+  position: relative;
+}
+
+.candleholder {
+  width: 1.8vw;
+  height: 6vw;
+  background: #FFD159;
+
+  left: 2.8vw;
+  top: 0.83vw;
+  position: relative;
+}
+
+.candle {
+  width: 1.8vw;
+  height: 6vw;
+  background: white;
+
+  z-index: 3;
+
+  left: 2.8vw;
+  top: 1.5vw;
+  position: relative;
+}
+
+.wick {
+  width: 0.4vw;
+  height: .8vw;
+  background: black;
+
+  position: relative;
+  left: 3.4vw;
+  top: 1.5vw;
+
+  z-index: 4;
+}
+
+.candle_2 {
+  position: absolute;
+  bottom: 17.5vw;
+  right: 38vw;
+
+  z-index: 3;
+
+}
+
+.candle_shadow_1 {
+  width: 20vw;
+  height: 4vw;
+  background: darkgray;
+  border-radius: 60vw / 60vw;
+  z-index: 1;
+
+  position: absolute;
+  bottom: 11vw;
+  left: 32vw;
+  transform: skew(10deg);
+
+  filter: blur(3px)
+}
+
+.squash {
+  position: relative;
+
+  width: 12vw;
+  height: 6vw;
+
+  background: #EFD9A0;
+  border-radius: 264vw;
+  transform: rotate(-28.89deg);
+
+  box-shadow: inset 5px -9px 10px 0px #CB9A53;
+
+}
+
+.squash_bottom {
+  width: 6.6vw;
+  height: 6.6vw;
+  background: #EFD9A0;
+  border-radius: 60px / 60px;
+
+  position: relative;
+  top: 4.8vw;
+  left: 5.7vw;
+ 
+
+  box-shadow: inset -10px -20px 4px 0px #CB9A53;
+
+
+}
+
+
+.squash_shape {
+  position: absolute;
+  right: 40.5vw;
+  bottom: 15vw;
+
+  z-index: 4;
+}
+
+.squash_stem {
+  border-bottom: 10px solid brown;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  height: 0;
+  width: 9px;
+
+  transform: rotate(240deg);
+
+  position: relative;
+  bottom: 7px;
+  left: 9px;
+}
+
+.vase {
+  width: 5vw;
+  height: 12vw;
+
+  background: rgba(232, 232, 232, 0.6);
+
+  position: relative;
+  right: 7px;
+}
+
+.flower {
+  position: absolute;
+  left: 40.5vw;
+  bottom: 22vw;
+
+  z-index: 2;
+}
+
+.vase_bottom {
+  position: relative;
+
+  width: 0;
+  height: 0;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+  border-bottom: 2.6vw solid rgba(232, 232, 232, 0.6);
+
+}
+
+.vase_bottom_2{
+  position: relative;
+
+  width: 0;
+  height: 0;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+  border-top: 2.6vw solid rgba(232, 232, 232, 0.6);
+}
+
+.flower_stem{
+  position: relative;
+
+  width: 0;
+  height: 0;
+  border-left: 2.5vw solid transparent;
+  border-right: 2.5vw solid transparent;
+  border-top: 15vw solid #729330;
+
+}
+
+.the_vase {
+  position: absolute;
+  left: 41vw;
+  bottom: 19vw;
+
+  z-index: 3;
+}
+
+
+.leaves {
+  width: 8vw;
+  height: 4vw;
+  background: #729330;
+  border-radius: 100vw / 50vw;
+
+  position: relative;
+  top:7vw;
+  right: 4.8vw;
+
+
+  transform: rotate(45deg);
+}
+
+.two {
+  position: relative;
+  transform: rotate(90deg);
+  top: 3vw;
+  right: 1.8vw;
+ 
+}
+
+.three {
+  position: relative;
+  top: -1vw;
+  right: -1.0vw;
+
+
+
+  transform: rotate(120deg);
+}
+
+.flower_head {
+  width:6vw;
+  height: 1.5vw;
+  border-radius: 20vw;
+  background: red;
+
+  position: relative;
+
+}
+
+.flower_head::after, .flower_head::before {
+  content: '';
+  position: absolute;
+  background: red;
+  border-radius: 20vw;
+  width: 6vw;
+  height: 1.5vw;
+  transform: rotate(60deg);
+}
+
+.flower_head::before {
+  transform: rotate(-60deg);
+}
+.flower_heads {
+  position: absolute;
+  left: 38vw;
+  top: 10vw;
+
+  z-index: 6;
+}
+
+.f1 {
+  position: relative;
+  left: 5vw;
+  top: 2vw;
+
+}
+
+.f2 {
+  position: relative;
+  bottom: 0.6vw;
+}
+
+.f3 {
+  position: relative;
+  left: 2vw;
+}
+
+.f4 {
+  position: relative;
+  right: 2.8vw;
+  bottom: .8vw;
+}
+
+.f5 {
+  left: 4vw;
+  bottom: 7vw;
+}
+
+
+
