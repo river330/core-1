@@ -1,0 +1,84 @@
+@keyframes flowerSpin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes flowerGrow {
+	0% {
+		transform: scale(1.0,1.0) rotate(0turn);
+	}
+	100% {
+		transform: scale(4.0,4.0) rotate(1turn);
+	}
+}
+
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
+	position: relative;
+	max-width: 400px;
+}
+
+.flower{
+	animation: flowerSpin 3s linear infinite;
+
+
+}
+
+.flower:hover {
+	animation: flowerGrow 1s linear	infinite;
+}
+
+.two {
+	bottom: 300px;
+	left: 400px;
+}
+
+
+.three {
+	left: 800px;
+	bottom: 300px;
+}
+
+.four {
+	bottom: 1000px;
+	left: 700px;
+}
+
+.five {
+	bottom: 1750px;
+	left: 800px;
+
+}
+
+.six {
+	bottom: 2000px;
+	left: 1200px;
+}
+
+.seven {
+	bottom: 1900px;
+	left: 1400px;
+}
+
+.eight {
+	bottom: 2500px;
+	left: 1150px;
+
+}
+
+.nine {
+	bottom: 2800px;
+}
+
+.ten {
+	bottom: 3200px;
+	left: 400px;
+}
+.container {
+	width: 1000px;
+	height: 400px;
+}
