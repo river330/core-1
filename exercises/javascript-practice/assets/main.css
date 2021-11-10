@@ -9,12 +9,16 @@ section {
   align-items:  center;
   height:  100vh;
 }
+section > * {
+  margin: 10px;
+
+}
 
 .button {
   padding: 50px 80px;
   border-radius: 60px;
   background-color:  white;
-  color:  black;
+  color:  orange;
 
   font-family: "Futura";
   font-size:  60px;
@@ -23,7 +27,8 @@ section {
 }
 
 .button:hover {
-  background-color: #43B954;
+  background-color: orange;
+  color: white;
   cursor:  pointer;
 }
 
@@ -37,7 +42,7 @@ section {
 }
 
 .light {
-	background: radial-gradient(circle, rgba(34,193,195,1) 4%, rgba(152,190,114,1) 35%, rgba(253,187,45,1) 97%);
+	background-image: radial-gradient(circle, rgba(34,193,195,1) 4%, rgba(152,190,114,1) 35%, rgba(253,187,45,1) 97%);;
 }
 
 .buttonOn {
@@ -49,4 +54,23 @@ section {
 .buttonOn:hover {
 	background-color: white;
  	color:  orange;
+  cursor: default;
+}
+
+.button_2 {
+  padding: 20px 50px;
+  border-radius:30px;
+  background-color:  white;
+  color:  orange;
+
+  font-family: "Futura";
+  font-size:  30px;
+  text-align:  center;
+  display: none;
+}
+
+.button_2:hover {
+  cursor: pointer;
+  background-color: orange;
+  color: white;
 }

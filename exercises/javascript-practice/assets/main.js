@@ -50,23 +50,27 @@ function checkAlarm() {
 		body.classList.add("light");
 		document.getElementById("button").innerHTML = "Wake Up!";
 		button.classList.add("buttonOn");
+		document.getElementById("button_2").style.display = "inherit"
+
 	}
 	if (hour <=7) {
 		document.getElementById("button").innerHTML = "Keep Sleeping";
+		document.getElementById("button_2").style.display = "inherit"
 
 	}
 }
 
-function restartClock() {
-	let alarm = "Wake Up";
-	if (document.getElementById("button").includes(alarm)) {
-		window.location.reload();
-	}
+function restartAlarm() {
+	window.location.reload();
 }
 
 let button = document.querySelector(".button");
 button.addEventListener("click", checkAlarm);
-button.addEventListener("click", restartClock);
+
+let reset = document.querySelector(".button_2");
+button_2.addEventListener("click", restartAlarm)
+
+
 
 
 
