@@ -1,0 +1,125 @@
+@keyframes moveCircle {
+  0% {
+    clip-path: circle(8.0% at 42% 47%)
+  }
+  15% {
+    clip-path: circle(11% at 10% 30%);
+  }
+  30% {
+    clip-path: circle(15.0% at 20% 20%)
+  }
+  40% {
+    clip-path: circle(5% at 40% 47%);
+  }
+  70% {
+    clip-path: circle(12% at 75% 60%);
+  }
+  100%{
+    clip-path: circle(11.0% at 42% 47%)
+  }
+
+}
+
+body {
+  background-color:  black;
+}
+
+.black {
+
+}
+
+
+.whole {
+  clip-path: circle(8.0% at 42% 47%);
+  animation: moveCircle 8s;
+  animation-delay: 0.8s;
+  animation-iteration-count: infinite;
+  background-color: white;
+
+
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: url("homepage.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+}
+
+.menu {
+  z-index: 4;
+  position: fixed;
+  margin: auto;
+
+  justify-content: center;
+  align-self: center;
+
+  display: flex;
+  flex-direction: row;
+
+  left: 30vw;
+  bottom: 40vh;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+
+.regular:hover {
+  filter: invert(28%) sepia(74%) saturate(2580%) hue-rotate(351deg) brightness(102%) contrast(103%);
+}
+.bubble:hover {
+  filter: invert(75%) sepia(41%) saturate(744%) hue-rotate(19deg) brightness(90%) contrast(98%);
+}
+
+.special:hover {
+  filter: invert(59%) sepia(43%) saturate(681%) hue-rotate(163deg) brightness(101%) contrast(106%);
+
+}
+
+.cursive:hover {
+  filter: invert(70%) sepia(96%) saturate(352%) hue-rotate(354deg) brightness(105%) contrast(104%);
+}
+
+a {
+  margin: 0 0;
+  max-width: fit-content;
+
+}
+.header {
+  position: relative;
+  color: white;
+  font-family: "Futura";
+  font-size: 50px;
+
+  margin: auto;
+
+  top: 35vh;
+  left: 37vw;
+}
+
+@media only screen and (max-width: 768px) {
+
+.menu {
+  flex-direction: column;
+  bottom: 25vh;
+  left: 35vw;
+
+}
+
+img {
+  height: 120px;
+  width: 120px;
+}
+
+.header {
+  font-size: 40px;
+  left: 17vw;
+  top: 17vh;
+}
