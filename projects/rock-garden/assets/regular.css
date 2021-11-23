@@ -182,7 +182,13 @@ body {
   background-blend-mode: lighten;
 
 }
+ .return {
+  width: 150px;
+  height: 150px;
+}
  .modal {
+  left: 50%;
+  top: 50%;
   width: 50%;
   height: 50%;
  }
