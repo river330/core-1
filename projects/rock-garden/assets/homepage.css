@@ -107,7 +107,7 @@ body {
   filter: invert(70%) sepia(96%) saturate(352%) hue-rotate(354deg) brightness(105%) contrast(104%);
 }
 
-@media only screen (max-width: 768px) {
+@media (max-width: 768px) {
 
 .homepage {
 	font-size: 50px;

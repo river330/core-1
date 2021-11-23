@@ -165,17 +165,27 @@ body {
 }
 
 
-@media only screen (max-width: 768px) {
+@media (max-width: 768px) {
 
+ body  {
+  background-color: black;
+  }
+
+  .buttonOn {
+  z-index: 7;
+   filter: invert(28%) sepia(74%) saturate(2580%) hue-rotate(351deg) brightness(102%) contrast(103%);
+  background-blend-mode: lighten;
+}
   #one {
-  width: 350px;
+  width: 150px;
   height: auto;
   background-blend-mode: lighten;
 
 }
-
-
-
+ .modal {
+  width: 50%;
+  height: 50%;
+ }
 
 
 

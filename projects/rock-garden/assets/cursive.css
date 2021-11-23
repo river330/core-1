@@ -165,10 +165,10 @@ body {
 }
 
 
-@media only screen (max-width: 768px) {
+@media (max-width: 768px) {
 
   body  {
-    background-color: black;
+  background-color: black;
   }
 
   .buttonOn {
@@ -182,11 +182,10 @@ body {
   background-blend-mode: lighten;
 
 }
-
-  .modal-box {
-    font-family: Arial;
-  }
-
+ .modal {
+  width: 50%;
+  height: 50%;
+ }
 
 
 
