@@ -189,10 +189,8 @@ body {
   height: 150px;
 }
  .modal {
-  left: 50%;
-  top: 50%;
-  width: 20%;
-  height: 20%;
+  position: relative;
+  top: 50vh;
  }
 
 
