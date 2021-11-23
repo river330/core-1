@@ -166,7 +166,7 @@ body {
 
 }
 
-@media (max-width: 768px) {
+@media only screen (max-width: 768px) {
 
   #one {
   width: 350px;
