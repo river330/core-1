@@ -65,7 +65,15 @@ function getRandomNumber(min, max) {
     
 }
 
-window.onresize = function(){ location.reload(); };
+
+function checkMediaQuery() {
+    if (window.innerWidth > 768) {
+        location.reload();
+    
+    }
+};
+
+window.addEventListener('resize', checkMediaQuery);
 
 // When the user scrolls the page, execute myFunction
 // window.onscroll = function() {myFunction()};
