@@ -4,7 +4,7 @@ body {
 
 
 #one {
-  width: 700px;
+  width: 500px;
   height: auto;
   background-blend-mode: lighten;
 
@@ -82,22 +82,87 @@ body {
 	filter: invert(70%) sepia(96%) saturate(352%) hue-rotate(354deg) brightness(105%) contrast(104%);
 }
 
-
 .rand {
   position: relative;
+  transform: rotate(-4deg);
 
 }
 
 .shira {
-	position: relative;
-	transform: rotate(10deg);
+  position: relative;
+  transform: rotate(2deg);
 }
 
 .matt {
-	position: relative;
-	transform: rotate(45deg);
+  position: relative;
+  transform: rotate(8deg);
 }
 
+.themis {
+  position: relative;
+  transform: rotate(10deg);
+}
+
+.kenny {
+  position: relative;
+  transform: rotate(5deg);
+
+}
+
+.devon {
+  position: relative;
+  transform: rotate(-2deg);
+}
+
+.wes {
+  position: relative;
+  transform: rotate(-5deg);
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 6;
+
+  cursor: default;
+
+}
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: invert(70%) sepia(96%) saturate(352%) hue-rotate(354deg) brightness(105%) contrast(104%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+
+  font-family: Futura;
+  text-align: center;
+
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+
+}
 
 
 @media only screen and (max-width: 768px) {

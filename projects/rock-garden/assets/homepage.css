@@ -1,6 +1,6 @@
 @keyframes moveCircle {
   0% {
-    clip-path: circle(8.0% at 42% 47%)
+    clip-path: circle(8.0% at 60% 67%)
   }
   15% {
     clip-path: circle(11% at 10% 30%);
@@ -11,35 +11,34 @@
   40% {
     clip-path: circle(5% at 40% 47%);
   }
-  70% {
-    clip-path: circle(12% at 75% 60%);
+
+ 	65%{
+ 		clip-path: circle(17% at 90% 90%);
+ 	}
+  80% {
+    clip-path: circle(12% at 75% 15%);
   }
   100%{
-    clip-path: circle(11.0% at 42% 47%)
+    clip-path: circle(8.0% at 60% 67%)
   }
 
-}
 
+}
 body {
-  background-color:  black;
-}
-
-.black {
+	background-color: black;
 
 }
-
 
 .whole {
-  clip-path: circle(8.0% at 42% 47%);
-  animation: moveCircle 8s;
-  animation-delay: 0.8s;
-  animation-iteration-count: infinite;
-  background-color: white;
-
-
+	animation: moveCircle 10s;
+	animation-iteration-count: infinite;
+	position: absolute;
+	height: 100vh;
+  width: 100vw;
 }
 
 .background {
+	position: relative;
   height: 100vh;
   width: 100vw;
 
@@ -51,24 +50,45 @@ body {
   background-color: black;
 }
 
-.menu {
-  z-index: 4;
-  position: fixed;
-  margin: auto;
+.homepage {
+	font-family: "Futura";
+	font-size: 80px;
 
-  justify-content: center;
-  align-self: center;
-
-  display: flex;
-  flex-direction: row;
-
-  left: 30vw;
-  bottom: 40vh;
+	color: white;
+	margin: auto;
+	text-align: center;
 }
 
-img {
-  height: 150px;
-  width: 150px;
+.button {
+	width: 150px;
+	height: 150px;
+}
+
+.sections {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	margin: auto;
+
+	justify-content: space-evenly;
+	width: 50%;
+}
+
+.menu {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+	justify-content: center;
+	align-items: center;
+
+	width: 100vw;
+
+	margin-top: 20%;
+
+	z-index: 5;
 }
 
 .regular:hover {
@@ -87,39 +107,21 @@ img {
   filter: invert(70%) sepia(96%) saturate(352%) hue-rotate(354deg) brightness(105%) contrast(104%);
 }
 
-a {
-  margin: 0 0;
-  max-width: fit-content;
-
-}
-.header {
-  position: relative;
-  color: white;
-  font-family: "Futura";
-  font-size: 50px;
-
-  margin: auto;
-
-  top: 35vh;
-  left: 37vw;
-}
-
 @media only screen and (max-width: 768px) {
 
-.menu {
-  flex-direction: column;
-  bottom: 25vh;
-  left: 35vw;
+.homepage {
+	font-size: 50px;
+	margin-bottom: 30px;
 
 }
-
-img {
-  height: 120px;
-  width: 120px;
+.sections {
+	flex-direction: column
 }
 
-.header {
-  font-size: 40px;
-  left: 17vw;
-  top: 17vh;
+.button {
+	width: 100px;
+	height: 100px;
+
+	margin: auto;
 }
+
