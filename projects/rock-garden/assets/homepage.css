@@ -117,6 +117,9 @@ body {
 .sections {
 	flex-direction: column
 }
+.menu {
+margin-top: 40%;
+}
 
 .button {
 	width: 100px;
