@@ -1,0 +1,66 @@
+@keyframes homepageBounce {
+        0%   { transform: scale(1,1) translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1)   translateY(-55px);}
+        50%  { transform: scale(1.05,.95) translateY(0); }
+        58%  { transform: scale(1,1) translateY(-7px); }
+        65%  { transform: scale(1,1) translateY(0);}
+        100% { transform: scale(1,1) translateY(0);}
+    }
+}
+@keyframes resizeText {
+	0% {
+		transform: scale(1.0);
+	}
+	50% {
+		transform: scale(2.0);
+	}
+	100% {
+		transform: scale(1.0);
+	}
+}
+
+body {
+	cursor: none;
+  	margin: 0;
+  	display: flex;
+  /* This centers our sketch horizontally. */
+  	justify-content: center;
+  /* This centers our sketch vertically. */
+  	align-items: center;
+}
+
+/* i'm using the z index to move the slider on top of the container */
+.container {
+	animation: 
+		homepageBounce 1.5s linear;
+	animation-iteration-count: 3;
+  z-index: 4;
+  display:  flex;
+  font-family: Futura;
+  font-size:  15vw;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+
+}
+
+.title {
+	font-family: Futura;
+	font-size:  15vw;
+	color: rgba(200, 237, 40, 0.5);
+	-webkit-text-stroke: 1px black;
+	}
+.title:hover {
+	color: rgba(200, 237, 40, 1);
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+a {
+	text-decoration: none;
+}
