@@ -44,6 +44,9 @@ body {
   height: 100vh;
   letter-spacing: 1px;
 
+ 	width: fit-content;
+ 	height: fit-content;
+
 }
 
 .title {

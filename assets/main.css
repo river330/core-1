@@ -1,94 +1,69 @@
-body { 
-	background-image: 
-	url(Grain-Texture-07.png),
-	conic-gradient(from 252.18deg at 55.38% 46.63%, rgba(26, 135, 44, 0.82) 0deg, rgba(255, 165, 60, 0.772455) 68.83deg, rgba(255, 165, 60, 0) 360deg), 
-	radial-gradient(34.17% 102.77% at 76.53% 19.34%, rgba(201, 107, 152, 0.8) 24.12%, rgba(214, 122, 131, 0) 100%);
-	background-repeat: repeat, no-repeat, no-repeat;
-  	background-attachment: fixed;
- 	background-size: 30% 30%, 100% 100%, 100% 100%;
+
+body {
+  margin: 0;
+  display: flex;
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+  /* This centers our sketch vertically. */
+  align-items: center;
+
+  background: black;
+}
+
+/* i'm using the z index to move the slider on top of the container */
+.container {
+  z-index: 5;
+  display:  flex;
+  font-family: nove, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8vw;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  letter-spacing: 1px;
+  width: 80vw;
+
+  flex-direction: column;
 
 }
 
-
-h1 {
-	position: relative;
-	top: 2.1em;
-	left: 1.1em;
-
-	margin: 0px 0px 0px 0px;
-
-	font-family: Eckmannpsych;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 8vw;
-	line-height: 90px;
-	text-transform: lowercase;
-	left: 4%;
-	right: 10%;
-
-	color: #FFFFFF;
-
-	transform: rotate(-20deg);
+.subhead {
+  font-family: informapro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2vw;
+  color: white;
+  text-align: center;
 }
 
-h2 {
-	position: relative;
-	right: 0.5em;
-	top: 1em;
-
-
-	font-family: Futura;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 5vw;
-	line-height: 111px;
-	text-align: right;
-	text-transform: lowercase;
-
-	color: #FFFFFF
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-.projects{
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-
-	margin: 0px 0px 0px 0px;
+.container{
+animation-name: appear;
+animation-duration: 2s;
 }
 
-.list {
-	align-self: flex-end;
+.parent {
+  height: 80vh;
+  overflow-y: hidden;
+
+
 }
-
-li {
-	font-family: Futura;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 2vw;
-	right: 0.5em;
-
-
-	text-align: right;
-	list-style-type: square;
-	color: #FFFFFF;;
+@keyframes appear {
+  from { transform: translateY(80vh) }
+  to {   transform: translateY(0)}
 }
-
-a:link {
+a {
+  z-index: 4;
   text-decoration: none;
-  color:  #FFFFFF;
+  color: red;
+
+  -webkit-text-stroke: 1px white;
 }
 
-a:visited {
-  text-decoration: none;
-  color:  #FFFFFF;
-}
-
-a:hover {
-  text-decoration: underline;
-  color:  #FFFFFF;
-}
-
-a:active {
-  text-decoration: underline;
-  color:  #FFFFFF;
-}
