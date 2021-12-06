@@ -23,9 +23,9 @@ function draw() {
 
   let circleBgcolor = {r: 255, g: 0, b:255};
 
-  circleBgcolor.r = random(0, 255);
-  circleBgcolor.g = random(0, 255);
-  circleBgcolor.b = random(0, 255);
+  circleBgcolor.r = map(mouseX, 0, windowWidth, 0, 255);
+  circleBgcolor.g = map(mouseY, 0, windowHeight, 0, 255);
+  circleBgcolor.b = map(mouseX-mouseY, 0, windowWidth, 0, 255);
 
     v = random (25, 50)
     frameRate(20)
