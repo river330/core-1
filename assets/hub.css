@@ -1,6 +1,6 @@
-body {
+html {
   background: black;
-  cursor: none;
+  cursor: url('logo.svg'), none;
 }
 
 
@@ -98,7 +98,7 @@ img {
 
 img:hover {
   opacity: 95%;
-  transition: opacity .5s ;
+  transition: opacity .5s;
 }
 
 
