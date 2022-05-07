@@ -51,7 +51,11 @@ body {
 }
 
 .homepage {
-	font-family: "Futura";
+	font-family: atrament-web, sans-serif;
+	
+	font-weight: 700;
+	
+	font-style: normal;
 	font-size: 80px;
 
 	color: white;
@@ -100,7 +104,6 @@ body {
 
 .special:hover {
   filter: invert(59%) sepia(43%) saturate(681%) hue-rotate(163deg) brightness(101%) contrast(106%);
-
 }
 
 .cursive:hover {
